@@ -2,7 +2,7 @@ import React from 'react'
 import { Pie, PieChart, Cell, Tooltip, ResponsiveContainer, Legend, } from "recharts";
 import CustomTooltip from './CustomTooltip';
 import CustomLegend from './CustomLegend';
-import RenderCenterLabel from './renderCenterLabel';
+import RenderCenterLabel from './RenderCenterLabel';
 const CustomPieChart = ({
     data,
     label,
