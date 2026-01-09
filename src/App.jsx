@@ -21,10 +21,10 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route path="/login" element={<AuthRedirect ><Login /></AuthRedirect>} />
-            <Route path="/signup" element={<AuthRedirect ><SignUp /></AuthRedirect>} />
+            <Route path="/login" element={<><AuthRedirect /><Login /></>} />
+            <Route path="/signup" element={<><AuthRedirect /><SignUp /></>} />
             <Route path="/verify-email" element={<EmailVerification />} />
-            <Route path="/forgot-password" element={<AuthRedirect ><ForgotPassword /></AuthRedirect>} />
+            <Route path="/forgot-password" element={<><AuthRedirect /><ForgotPassword /></>} />
             <Route path="/reset-password/:token" element={<ResetPassword />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/income" element={<Income />} />
